@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView list1 = findViewById(R.id.list1);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, andriod.R.layout.simple_list_item_multiple_choice, arr);
-        list1.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        list1.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         list1.setAdapter(adapter);
 
         list1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
